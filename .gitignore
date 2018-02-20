@@ -1,3 +1,4 @@
 # dependencies
 /.idea
 /node_modules
+/.next
