@@ -1,116 +1,25 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		var threw = true;
-/******/ 		try {
-/******/ 			modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 			threw = false;
-/******/ 		} finally {
-/******/ 			if(threw) delete installedModules[moduleId];
-/******/ 		}
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ "./actions/auth.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = firstStep;
-/* harmony export (immutable) */ __webpack_exports__["b"] = secondStep;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_auth__ = __webpack_require__("./constants/auth.js");
-
-
-function firstStep(data) {
-  return {
-    type: __WEBPACK_IMPORTED_MODULE_0__constants_auth__["a" /* FIRST_STEP_REQUEST */],
-    payload: data
-  };
-}
-function secondStep(data) {
-  return {
-    type: __WEBPACK_IMPORTED_MODULE_0__constants_auth__["b" /* SECOND_STEP_REQUEST */],
-    payload: data
-  };
-}
-
-/***/ }),
+webpackHotUpdate(0,{
 
 /***/ "./components/CustomModal/CustomModal.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("prop-types");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__ = __webpack_require__("react-bootstrap");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_bootstrap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__ = __webpack_require__("./node_modules/react-bootstrap/es/index.js");
 var _jsxFileName = 'E:\\projects\\react\\singup-module\\components\\CustomModal\\CustomModal.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -134,7 +43,7 @@ var CustomModal = function (_React$Component) {
     key: 'render',
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["Modal"],
+        __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["f" /* Modal */],
         { show: this.props.show, __source: {
             fileName: _jsxFileName,
             lineNumber: 8
@@ -142,6 +51,11 @@ var CustomModal = function (_React$Component) {
         },
         this.props.children
       );
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
     }
   }]);
 
@@ -157,17 +71,26 @@ CustomModal.defaultProps = {
   show: true
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (CustomModal);
+var _default = CustomModal;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
 
-/***/ }),
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
 
-/***/ "./components/CustomModal/index.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CustomModal__ = __webpack_require__("./components/CustomModal/CustomModal.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__CustomModal__["a"]; });
+  if (!reactHotLoader) {
+    return;
+  }
 
+  reactHotLoader.register(CustomModal, 'CustomModal', 'E:/projects/react/singup-module/components/CustomModal/CustomModal.js');
+  reactHotLoader.register(_default, 'default', 'E:/projects/react/singup-module/components/CustomModal/CustomModal.js');
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -175,17 +98,21 @@ CustomModal.defaultProps = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__("react-redux");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_redux__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__ = __webpack_require__("react-bootstrap");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_bootstrap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router__ = __webpack_require__("next/router");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__("./node_modules/react-redux/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__ = __webpack_require__("./node_modules/react-bootstrap/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router__ = __webpack_require__("./node_modules/next/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_router__);
 var _jsxFileName = 'E:\\projects\\react\\singup-module\\components\\CustomNavbar\\CustomNavbar.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -224,7 +151,7 @@ var CustomNavbar = function (_React$Component) {
 
       if (this.props.auth.isRegister) {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["Navbar"],
+          __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["i" /* Navbar */],
           {
             __source: {
               fileName: _jsxFileName,
@@ -232,7 +159,7 @@ var CustomNavbar = function (_React$Component) {
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["Navbar"].Header,
+            __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["i" /* Navbar */].Header,
             {
               __source: {
                 fileName: _jsxFileName,
@@ -240,7 +167,7 @@ var CustomNavbar = function (_React$Component) {
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["Navbar"].Brand,
+              __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["i" /* Navbar */].Brand,
               {
                 __source: {
                   fileName: _jsxFileName,
@@ -261,7 +188,7 @@ var CustomNavbar = function (_React$Component) {
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["Nav"],
+            __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["g" /* Nav */],
             {
               __source: {
                 fileName: _jsxFileName,
@@ -269,7 +196,7 @@ var CustomNavbar = function (_React$Component) {
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["NavItem"],
+              __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["h" /* NavItem */],
               { eventKey: 1, onClick: function onClick() {
                   return _this2.onRedirect("/about");
                 }, __source: {
@@ -280,7 +207,7 @@ var CustomNavbar = function (_React$Component) {
               'About'
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["NavItem"],
+              __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["h" /* NavItem */],
               { eventKey: 2, onClick: function onClick() {
                   return _this2.onRedirect("/contact");
                 }, __source: {
@@ -295,6 +222,11 @@ var CustomNavbar = function (_React$Component) {
       }
       return null;
     }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
   }]);
 
   return CustomNavbar;
@@ -306,16 +238,284 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["connect"])(mapStateToProps)(CustomNavbar));
+var _default = Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["connect"])(mapStateToProps)(CustomNavbar);
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(CustomNavbar, 'CustomNavbar', 'E:/projects/react/singup-module/components/CustomNavbar/CustomNavbar.js');
+  reactHotLoader.register(mapStateToProps, 'mapStateToProps', 'E:/projects/react/singup-module/components/CustomNavbar/CustomNavbar.js');
+  reactHotLoader.register(_default, 'default', 'E:/projects/react/singup-module/components/CustomNavbar/CustomNavbar.js');
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ "./components/CustomNavbar/index.js":
+/***/ "./components/Dashboard/Dashboard.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CustomNavbar__ = __webpack_require__("./components/CustomNavbar/CustomNavbar.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__CustomNavbar__["a"]; });
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__("./node_modules/react-redux/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__ = __webpack_require__("./node_modules/react-bootstrap/es/index.js");
+var _jsxFileName = 'E:\\projects\\react\\singup-module\\components\\Dashboard\\Dashboard.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var Dashboard = function (_React$Component) {
+  _inherits(Dashboard, _React$Component);
+
+  function Dashboard(props, context) {
+    _classCallCheck(this, Dashboard);
+
+    return _possibleConstructorReturn(this, (Dashboard.__proto__ || Object.getPrototypeOf(Dashboard)).call(this, props, context));
+  }
+
+  _createClass(Dashboard, [{
+    key: 'render',
+    value: function render() {
+      var auth = this.props.auth;
+
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 15
+            }
+          },
+          'User information'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_2_react_bootstrap__["k" /* Table */],
+          { striped: true, bordered: true, condensed: true, hover: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 16
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'thead',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 17
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'tr',
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 18
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'th',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 19
+                  }
+                },
+                'Email'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'th',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 20
+                  }
+                },
+                'Password'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'th',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 21
+                  }
+                },
+                'Date of birth'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'th',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 22
+                  }
+                },
+                'Gender'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'th',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 23
+                  }
+                },
+                'How hear about us'
+              )
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'tbody',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 26
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'tr',
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 27
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'td',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 28
+                  }
+                },
+                auth.email
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'td',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 29
+                  }
+                },
+                auth.password
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'td',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 30
+                  }
+                },
+                auth.dateOfBirth
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'td',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 31
+                  }
+                },
+                auth.gender
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'td',
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 32
+                  }
+                },
+                auth.howHearAboutUs
+              )
+            )
+          )
+        )
+      );
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
+  }]);
+
+  return Dashboard;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    auth: state.auth
+  };
+};
+
+var _default = Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["connect"])(mapStateToProps)(Dashboard);
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(Dashboard, 'Dashboard', 'E:/projects/react/singup-module/components/Dashboard/Dashboard.js');
+  reactHotLoader.register(mapStateToProps, 'mapStateToProps', 'E:/projects/react/singup-module/components/Dashboard/Dashboard.js');
+  reactHotLoader.register(_default, 'default', 'E:/projects/react/singup-module/components/Dashboard/Dashboard.js');
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./components/Dashboard/index.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Dashboard__ = __webpack_require__("./components/Dashboard/Dashboard.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Dashboard__["a"]; });
 
 
 /***/ }),
@@ -324,21 +524,25 @@ var mapStateToProps = function mapStateToProps(state) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("prop-types");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__("react-redux");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_redux__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__ = __webpack_require__("react-bootstrap");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux_form__ = __webpack_require__("react-redux-form");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__("./node_modules/react-redux/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__ = __webpack_require__("./node_modules/react-bootstrap/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux_form__ = __webpack_require__("./node_modules/react-redux-form/lib/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_redux_form__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _jsxFileName = 'E:\\projects\\react\\singup-module\\components\\FirstStep\\FirstStep.js';
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -353,7 +557,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 var emailField = function emailField(props) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["FormControl"], _extends({ type: 'text' }, props, {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["b" /* FormControl */], _extends({ type: 'text' }, props, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -361,7 +565,7 @@ var emailField = function emailField(props) {
   }));
 };
 var passwordField = function passwordField(props) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["FormControl"], _extends({ type: 'password' }, props, {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["b" /* FormControl */], _extends({ type: 'password' }, props, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -411,14 +615,14 @@ var FirstStep = function (_React$Component) {
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["FormGroup"],
+          __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["c" /* FormGroup */],
           { validationState: this.isError(formsFirstStep.email), __source: {
               fileName: _jsxFileName,
               lineNumber: 38
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["ControlLabel"],
+            __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["a" /* ControlLabel */],
             {
               __source: {
                 fileName: _jsxFileName,
@@ -445,7 +649,7 @@ var FirstStep = function (_React$Component) {
               lineNumber: 40
             }
           }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["FormControl"].Feedback, {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["b" /* FormControl */].Feedback, {
             __source: {
               fileName: _jsxFileName,
               lineNumber: 49
@@ -453,7 +657,7 @@ var FirstStep = function (_React$Component) {
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_redux_form__["Errors"], { wrapper: function wrapper(props) {
               return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["HelpBlock"],
+                __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["e" /* HelpBlock */],
                 {
                   __source: {
                     fileName: _jsxFileName,
@@ -478,14 +682,14 @@ var FirstStep = function (_React$Component) {
           })
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["FormGroup"],
+          __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["c" /* FormGroup */],
           { validationState: this.isError(formsFirstStep.password), __source: {
               fileName: _jsxFileName,
               lineNumber: 60
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["ControlLabel"],
+            __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["a" /* ControlLabel */],
             {
               __source: {
                 fileName: _jsxFileName,
@@ -511,7 +715,7 @@ var FirstStep = function (_React$Component) {
               lineNumber: 62
             }
           }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["FormControl"].Feedback, {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["b" /* FormControl */].Feedback, {
             __source: {
               fileName: _jsxFileName,
               lineNumber: 71
@@ -519,7 +723,7 @@ var FirstStep = function (_React$Component) {
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_redux_form__["Errors"], { wrapper: function wrapper(props) {
               return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["HelpBlock"],
+                __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["e" /* HelpBlock */],
                 {
                   __source: {
                     fileName: _jsxFileName,
@@ -543,14 +747,14 @@ var FirstStep = function (_React$Component) {
           })
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["FormGroup"],
+          __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["c" /* FormGroup */],
           { validationState: this.isError(formsFirstStep.passwordConfirm), __source: {
               fileName: _jsxFileName,
               lineNumber: 83
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["ControlLabel"],
+            __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["a" /* ControlLabel */],
             {
               __source: {
                 fileName: _jsxFileName,
@@ -580,7 +784,7 @@ var FirstStep = function (_React$Component) {
               lineNumber: 85
             }
           }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["FormControl"].Feedback, {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["b" /* FormControl */].Feedback, {
             __source: {
               fileName: _jsxFileName,
               lineNumber: 96
@@ -588,7 +792,7 @@ var FirstStep = function (_React$Component) {
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_redux_form__["Errors"], { wrapper: function wrapper(props) {
               return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["HelpBlock"],
+                __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["e" /* HelpBlock */],
                 {
                   __source: {
                     fileName: _jsxFileName,
@@ -622,6 +826,11 @@ var FirstStep = function (_React$Component) {
         )
       );
     }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
   }]);
 
   return FirstStep;
@@ -638,159 +847,30 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_2_react_redux__["connect"])(mapStateToProps)(FirstStep));
+var _default = Object(__WEBPACK_IMPORTED_MODULE_2_react_redux__["connect"])(mapStateToProps)(FirstStep);
 
-/***/ }),
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
 
-/***/ "./components/FirstStep/index.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__FirstStep__ = __webpack_require__("./components/FirstStep/FirstStep.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__FirstStep__["a"]; });
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
 
-
-/***/ }),
-
-/***/ "./components/Layout/Layout.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("prop-types");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head__ = __webpack_require__("next/head");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_head__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router__ = __webpack_require__("next/router");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_router__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux__ = __webpack_require__("react-redux");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_redux__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__store_configureStore__ = __webpack_require__("./store/configureStore.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__CustomNavbar__ = __webpack_require__("./components/CustomNavbar/index.js");
-var _jsxFileName = 'E:\\projects\\react\\singup-module\\components\\Layout\\Layout.js';
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-
-
-
-var store = Object(__WEBPACK_IMPORTED_MODULE_5__store_configureStore__["a" /* default */])();
-
-var Layout = function (_React$Component) {
-  _inherits(Layout, _React$Component);
-
-  function Layout() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
-    _classCallCheck(this, Layout);
-
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Layout.__proto__ || Object.getPrototypeOf(Layout)).call.apply(_ref, [this].concat(args))), _this), _this.onRedirect = function (path) {
-      __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.replace(path);
-    }, _temp), _possibleConstructorReturn(_this, _ret);
+  if (!reactHotLoader) {
+    return;
   }
 
-  _createClass(Layout, [{
-    key: 'render',
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_4_react_redux__["Provider"],
-        { store: store, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 20
-          }
-        },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 21
-            }
-          },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_next_head___default.a,
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 22
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('meta', { name: 'viewport', content: 'initial-scale=1.0, width=device-width', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 23
-              }
-            }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
-              integrity: 'sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u',
-              crossOrigin: 'anonymous', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 25
-              }
-            }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css',
-              integrity: 'sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp',
-              crossOrigin: 'anonymous', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 28
-              }
-            })
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__CustomNavbar__["a" /* default */], {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 33
-            }
-          }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'container', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 35
-              }
-            },
-            this.props.children
-          )
-        )
-      );
-    }
-  }]);
+  reactHotLoader.register(emailField, 'emailField', 'E:/projects/react/singup-module/components/FirstStep/FirstStep.js');
+  reactHotLoader.register(passwordField, 'passwordField', 'E:/projects/react/singup-module/components/FirstStep/FirstStep.js');
+  reactHotLoader.register(FirstStep, 'FirstStep', 'E:/projects/react/singup-module/components/FirstStep/FirstStep.js');
+  reactHotLoader.register(mapStateToProps, 'mapStateToProps', 'E:/projects/react/singup-module/components/FirstStep/FirstStep.js');
+  reactHotLoader.register(_default, 'default', 'E:/projects/react/singup-module/components/FirstStep/FirstStep.js');
+  leaveModule(module);
+})();
 
-  return Layout;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-Layout.propTypes = {
-  children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.any
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Layout);
-
-/***/ }),
-
-/***/ "./components/Layout/index.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Layout__ = __webpack_require__("./components/Layout/Layout.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Layout__["a"]; });
-
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -798,19 +878,17 @@ Layout.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("./node_modules/styled-jsx/style.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__("react-dom");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__("./node_modules/react-dom/cjs/react-dom.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__("prop-types");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux__ = __webpack_require__("react-redux");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_redux__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__ = __webpack_require__("react-bootstrap");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react_bootstrap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_redux_form__ = __webpack_require__("react-redux-form");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_redux__ = __webpack_require__("./node_modules/react-redux/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__ = __webpack_require__("./node_modules/react-bootstrap/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_redux_form__ = __webpack_require__("./node_modules/react-redux-form/lib/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_redux_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react_redux_form__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -818,6 +896,12 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _jsxFileName = 'E:\\projects\\react\\singup-module\\components\\SecondStep\\SecondStep.js';
 
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -833,7 +917,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 var birthdayField = function birthdayField(props) {
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["FormControl"], _extends({ type: 'text' }, props, {
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["b" /* FormControl */], _extends({ type: 'text' }, props, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -842,7 +926,7 @@ var birthdayField = function birthdayField(props) {
 };
 var selectAboutField = function selectAboutField(props) {
   return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["FormControl"],
+    __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["b" /* FormControl */],
     _extends({ componentClass: 'select' }, props, {
       __source: {
         fileName: _jsxFileName,
@@ -1017,7 +1101,7 @@ var SecondStep = function (_React$Component) {
                 }
               },
               __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["FormGroup"],
+                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["c" /* FormGroup */],
                 { validationState: this.isError(formsSecondStep.birthdayDate), __source: {
                     fileName: _jsxFileName,
                     lineNumber: 107
@@ -1044,7 +1128,7 @@ var SecondStep = function (_React$Component) {
                     lineNumber: 108
                   }
                 }),
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["FormControl"].Feedback, {
+                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["b" /* FormControl */].Feedback, {
                   __source: {
                     fileName: _jsxFileName,
                     lineNumber: 119
@@ -1052,7 +1136,7 @@ var SecondStep = function (_React$Component) {
                 }),
                 __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_react_redux_form__["Errors"], { wrapper: function wrapper(props) {
                     return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["HelpBlock"],
+                      __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["e" /* HelpBlock */],
                       {
                         __source: {
                           fileName: _jsxFileName,
@@ -1086,7 +1170,7 @@ var SecondStep = function (_React$Component) {
                 }
               },
               __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["FormGroup"],
+                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["c" /* FormGroup */],
                 { validationState: this.isError(formsSecondStep.birthdayMonth), __source: {
                     fileName: _jsxFileName,
                     lineNumber: 132
@@ -1113,7 +1197,7 @@ var SecondStep = function (_React$Component) {
                     lineNumber: 133
                   }
                 }),
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["FormControl"].Feedback, {
+                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["b" /* FormControl */].Feedback, {
                   __source: {
                     fileName: _jsxFileName,
                     lineNumber: 144
@@ -1121,7 +1205,7 @@ var SecondStep = function (_React$Component) {
                 }),
                 __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_react_redux_form__["Errors"], { wrapper: function wrapper(props) {
                     return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["HelpBlock"],
+                      __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["e" /* HelpBlock */],
                       {
                         __source: {
                           fileName: _jsxFileName,
@@ -1155,7 +1239,7 @@ var SecondStep = function (_React$Component) {
                 }
               },
               __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["FormGroup"],
+                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["c" /* FormGroup */],
                 { validationState: this.isError(formsSecondStep.birthdayYear), __source: {
                     fileName: _jsxFileName,
                     lineNumber: 157
@@ -1179,7 +1263,7 @@ var SecondStep = function (_React$Component) {
                     lineNumber: 158
                   }
                 }),
-                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["FormControl"].Feedback, {
+                __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["b" /* FormControl */].Feedback, {
                   __source: {
                     fileName: _jsxFileName,
                     lineNumber: 168
@@ -1187,7 +1271,7 @@ var SecondStep = function (_React$Component) {
                 }),
                 __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_react_redux_form__["Errors"], { wrapper: function wrapper(props) {
                     return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["HelpBlock"],
+                      __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["e" /* HelpBlock */],
                       {
                         __source: {
                           fileName: _jsxFileName,
@@ -1244,7 +1328,7 @@ var SecondStep = function (_React$Component) {
               'GENDER'
             ),
             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["ToggleButtonGroup"],
+              __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["m" /* ToggleButtonGroup */],
               {
                 justified: true,
                 name: 'gender',
@@ -1257,7 +1341,7 @@ var SecondStep = function (_React$Component) {
                 }
               },
               __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["ToggleButton"],
+                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["l" /* ToggleButton */],
                 { value: 'male', __source: {
                     fileName: _jsxFileName,
                     lineNumber: 191
@@ -1266,7 +1350,7 @@ var SecondStep = function (_React$Component) {
                 'MALE'
               ),
               __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["ToggleButton"],
+                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["l" /* ToggleButton */],
                 { value: 'female', __source: {
                     fileName: _jsxFileName,
                     lineNumber: 192
@@ -1275,7 +1359,7 @@ var SecondStep = function (_React$Component) {
                 'FEMALE'
               ),
               __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["ToggleButton"],
+                __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["l" /* ToggleButton */],
                 { value: 'unspecified', __source: {
                     fileName: _jsxFileName,
                     lineNumber: 193
@@ -1306,7 +1390,7 @@ var SecondStep = function (_React$Component) {
               'WHERE DID YOU HEAR ABOUT IS?'
             ),
             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["FormGroup"],
+              __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["c" /* FormGroup */],
               {
                 __source: {
                   fileName: _jsxFileName,
@@ -1321,7 +1405,7 @@ var SecondStep = function (_React$Component) {
                   lineNumber: 200
                 }
               }),
-              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["FormControl"].Feedback, {
+              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["b" /* FormControl */].Feedback, {
                 __source: {
                   fileName: _jsxFileName,
                   lineNumber: 204
@@ -1329,7 +1413,7 @@ var SecondStep = function (_React$Component) {
               }),
               __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6_react_redux_form__["Errors"], { wrapper: function wrapper(props) {
                   return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["HelpBlock"],
+                    __WEBPACK_IMPORTED_MODULE_5_react_bootstrap__["e" /* HelpBlock */],
                     {
                       __source: {
                         fileName: _jsxFileName,
@@ -1375,6 +1459,11 @@ var SecondStep = function (_React$Component) {
         })
       );
     }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
   }]);
 
   return SecondStep;
@@ -1392,45 +1481,49 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_4_react_redux__["connect"])(mapStateToProps)(SecondStep));
+var _default = Object(__WEBPACK_IMPORTED_MODULE_4_react_redux__["connect"])(mapStateToProps)(SecondStep);
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(birthdayField, 'birthdayField', 'E:/projects/react/singup-module/components/SecondStep/SecondStep.js');
+  reactHotLoader.register(selectAboutField, 'selectAboutField', 'E:/projects/react/singup-module/components/SecondStep/SecondStep.js');
+  reactHotLoader.register(SecondStep, 'SecondStep', 'E:/projects/react/singup-module/components/SecondStep/SecondStep.js');
+  reactHotLoader.register(mapStateToProps, 'mapStateToProps', 'E:/projects/react/singup-module/components/SecondStep/SecondStep.js');
+  reactHotLoader.register(_default, 'default', 'E:/projects/react/singup-module/components/SecondStep/SecondStep.js');
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ "./components/SecondStep/index.js":
+/***/ "./components/SingUpRequired/SingUpRequired.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SecondStep__ = __webpack_require__("./components/SecondStep/SecondStep.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__SecondStep__["a"]; });
-
-
-/***/ }),
-
-/***/ "./components/SingUpFormWizard/SingUpFormWizard.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__("react-redux");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_redux__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router__ = __webpack_require__("next/router");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_router__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_addons_transition_group__ = __webpack_require__("react-addons-transition-group");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_addons_transition_group___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_addons_transition_group__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__StepsProgress__ = __webpack_require__("./components/StepsProgress/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__CustomModal__ = __webpack_require__("./components/CustomModal/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__FirstStep__ = __webpack_require__("./components/FirstStep/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__SecondStep__ = __webpack_require__("./components/SecondStep/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ThirdStep__ = __webpack_require__("./components/ThirdStep/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__actions_auth__ = __webpack_require__("./actions/auth.js");
-var _jsxFileName = 'E:\\projects\\react\\singup-module\\components\\SingUpFormWizard\\SingUpFormWizard.js';
-
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__("./node_modules/react-redux/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_router__ = __webpack_require__("./node_modules/next/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_router___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_router__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
 
+  enterModule && enterModule(module);
+})();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1442,150 +1535,46 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+var SingUpRequired = function (_React$Component) {
+  _inherits(SingUpRequired, _React$Component);
 
+  function SingUpRequired() {
+    var _ref;
 
+    var _temp, _this, _ret;
 
+    _classCallCheck(this, SingUpRequired);
 
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
 
-
-
-var SingUpFormWizard = function (_React$Component) {
-  _inherits(SingUpFormWizard, _React$Component);
-
-  function SingUpFormWizard(props, context) {
-    _classCallCheck(this, SingUpFormWizard);
-
-    var _this = _possibleConstructorReturn(this, (SingUpFormWizard.__proto__ || Object.getPrototypeOf(SingUpFormWizard)).call(this, props, context));
-
-    _this.nextStep = function () {
-      _this.setState({ step: _this.state.step + 1 });
-    };
-
-    _this.previousStep = function () {
-      _this.setState({ step: _this.state.step - 1 });
-    };
-
-    _this.onFirstStep = function (data) {
-      _this.props.dispatch(Object(__WEBPACK_IMPORTED_MODULE_10__actions_auth__["a" /* firstStep */])(data));
-      _this.nextStep();
-    };
-
-    _this.onSecondStep = function (data) {
-      _this.props.dispatch(Object(__WEBPACK_IMPORTED_MODULE_10__actions_auth__["b" /* secondStep */])(data));
-      _this.nextStep();
-    };
-
-    _this.onDashboardBtnClick = function () {
-      __WEBPACK_IMPORTED_MODULE_3_next_router___default.a.replace('/');
-    };
-
-    _this.state = {
-      step: 1
-    };
-    return _this;
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = SingUpRequired.__proto__ || Object.getPrototypeOf(SingUpRequired)).call.apply(_ref, [this].concat(args))), _this), _this.onRedirect = function (path) {
+      __WEBPACK_IMPORTED_MODULE_2_next_router___default.a.replace(path);
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
-  _createClass(SingUpFormWizard, [{
+  _createClass(SingUpRequired, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      if (!this.props.auth.isRegister) {
+        __WEBPACK_IMPORTED_MODULE_2_next_router___default.a.replace('/singup');
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'div',
-        {
-          className: 'jsx-142636939',
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 46
-          }
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_6__CustomModal__["a" /* default */],
-          { className: 'modal', __source: {
-              fileName: _jsxFileName,
-              lineNumber: 47
-            }
-          },
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            'div',
-            {
-              className: 'jsx-142636939' + ' ' + 'modal__title',
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 49
-              }
-            },
-            this.state.step <= 2 ? "Singup" : "Thank you!"
-          ),
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            'div',
-            {
-              className: 'jsx-142636939',
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 51
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__StepsProgress__["a" /* default */], { currentStep: this.state.step, steps: 3, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 52
-              }
-            })
-          ),
-          this.state.step === 1 && __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            'div',
-            {
-              className: 'jsx-142636939' + ' ' + 'form',
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 55
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__FirstStep__["a" /* default */], { onNext: this.onFirstStep, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 55
-              }
-            })
-          ),
-          this.state.step === 2 && __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            'div',
-            {
-              className: 'jsx-142636939' + ' ' + 'form',
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 56
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__SecondStep__["a" /* default */], { onBack: this.previousStep, onNext: this.onSecondStep, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 56
-              }
-            })
-          ),
-          this.state.step === 3 && __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            'div',
-            {
-              className: 'jsx-142636939' + ' ' + 'form without-border',
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 57
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__ThirdStep__["a" /* default */], { onDashboardBtnClick: this.onDashboardBtnClick, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 57
-              }
-            })
-          )
-        ),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-          styleId: '142636939',
-          css: '.modal-dialog{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%) !important;-ms-transform:translate(-50%,-50%) !important;transform:translate(-50%,-50%) !important;}.modal .modal__title{display:block;color:#66a9e2;text-align:center;margin-top:20px;margin-bottom:20px;font-size:18px;}.form{margin:60px 10px;padding-bottom:60px;border-bottom:1px solid #808080;}.without-border{border:none;}.next-btn{position:absolute;right:10px;bottom:10px;text-decoration:none;font-size:15px;display:inline-block;vertical-align:middle;color:#66a9e2;}.next-btn:after{content:\'\u2192\';display:inline-block;vertical-align:middle;padding-bottom:5px;margin-left:5px;}.back-btn{position:absolute;left:10px;bottom:10px;text-decoration:none;font-size:15px;display:inline-block;vertical-align:middle;color:#808080;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXFNpbmdVcEZvcm1XaXphcmRcXFNpbmdVcEZvcm1XaXphcmQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBNEQyQixBQUcrQixBQU1KLEFBUUcsQUFLTCxBQUdNLEFBVU4sQUFPTSxZQW5CcEIsQUFhdUIsRUExQlAsR0FRTSxDQWRaLEFBc0JHLEFBaUJELFFBdENELEVBTVMsQUFpQ04sQ0FqQkEsSUFVVSxFQS9CcUIsRUFhWCxHQTBCWCxDQWpCQSxLQWhCTCxTQTBCRyxNQVFKLENBakNJLEFBZ0JKLE9BVGpCLEtBbUJrQixFQVFLLENBakJBLElBaEJOLFNBMEJqQixNQXpCQSxDQWlDd0IsQ0FqQkEscUJBa0JSLENBakJBLGFBa0JoQixDQWpCQSx1Q0ExQkEiLCJmaWxlIjoiY29tcG9uZW50c1xcU2luZ1VwRm9ybVdpemFyZFxcU2luZ1VwRm9ybVdpemFyZC5qcyIsInNvdXJjZVJvb3QiOiJFOi9wcm9qZWN0cy9yZWFjdC9zaW5ndXAtbW9kdWxlIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IHsgY29ubmVjdCB9IGZyb20gJ3JlYWN0LXJlZHV4JztcclxuaW1wb3J0IFJvdXRlciBmcm9tICduZXh0L3JvdXRlcidcclxuaW1wb3J0IFJlYWN0VHJhbnNpdGlvbkdyb3VwIGZyb20gJ3JlYWN0LWFkZG9ucy10cmFuc2l0aW9uLWdyb3VwJ1xyXG5pbXBvcnQgU3RlcHNQcm9ncmVzcyBmcm9tICcuLi9TdGVwc1Byb2dyZXNzJztcclxuaW1wb3J0IEN1c3RvbU1vZGFsIGZyb20gJy4uL0N1c3RvbU1vZGFsJztcclxuaW1wb3J0IEZpcnN0U3RlcCBmcm9tICcuLi9GaXJzdFN0ZXAnO1xyXG5pbXBvcnQgU2Vjb25kU3RlcCBmcm9tICcuLi9TZWNvbmRTdGVwJztcclxuaW1wb3J0IFRoaXJkU3RlcCBmcm9tICcuLi9UaGlyZFN0ZXAnO1xyXG5pbXBvcnQgeyBmaXJzdFN0ZXAsIHNlY29uZFN0ZXAgfSBmcm9tICcuLi8uLi9hY3Rpb25zL2F1dGgnXHJcblxyXG5cclxuY2xhc3MgU2luZ1VwRm9ybVdpemFyZCBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XHJcbiAgY29uc3RydWN0b3IocHJvcHMsIGNvbnRleHQpIHtcclxuICAgIHN1cGVyKHByb3BzLCBjb250ZXh0KTtcclxuXHJcbiAgICB0aGlzLnN0YXRlID0ge1xyXG4gICAgICBzdGVwOiAxXHJcbiAgICB9O1xyXG4gIH1cclxuXHJcbiAgbmV4dFN0ZXAgPSAoKSA9PiB7XHJcbiAgICB0aGlzLnNldFN0YXRlKHsgc3RlcDogdGhpcy5zdGF0ZS5zdGVwICsgMSB9KTtcclxuICB9O1xyXG5cclxuICBwcmV2aW91c1N0ZXAgPSAoKSA9PiB7XHJcbiAgICB0aGlzLnNldFN0YXRlKHsgc3RlcDogdGhpcy5zdGF0ZS5zdGVwIC0gMSB9KTtcclxuICB9O1xyXG5cclxuICBvbkZpcnN0U3RlcCA9IChkYXRhKSA9PiB7XHJcbiAgICB0aGlzLnByb3BzLmRpc3BhdGNoKGZpcnN0U3RlcChkYXRhKSk7XHJcbiAgICB0aGlzLm5leHRTdGVwKCk7XHJcbiAgfTtcclxuXHJcbiAgb25TZWNvbmRTdGVwID0gKGRhdGEpID0+IHtcclxuICAgIHRoaXMucHJvcHMuZGlzcGF0Y2goc2Vjb25kU3RlcChkYXRhKSk7XHJcbiAgICB0aGlzLm5leHRTdGVwKCk7XHJcbiAgfTtcclxuXHJcbiAgb25EYXNoYm9hcmRCdG5DbGljayA9ICgpID0+IHtcclxuICAgIFJvdXRlci5yZXBsYWNlKCcvJylcclxuICB9O1xyXG5cclxuICByZW5kZXIoKSB7XHJcbiAgICByZXR1cm4gKFxyXG4gICAgICA8ZGl2PlxyXG4gICAgICAgIDxDdXN0b21Nb2RhbCBjbGFzc05hbWU9XCJtb2RhbFwiPlxyXG5cclxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibW9kYWxfX3RpdGxlXCI+e3RoaXMuc3RhdGUuc3RlcCA8PSAyID8gXCJTaW5ndXBcIiA6IFwiVGhhbmsgeW91IVwifTwvZGl2PlxyXG5cclxuICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgIDxTdGVwc1Byb2dyZXNzIGN1cnJlbnRTdGVwPXt0aGlzLnN0YXRlLnN0ZXB9IHN0ZXBzPXszfS8+XHJcbiAgICAgICAgICA8L2Rpdj5cclxuXHJcbiAgICAgICAgICB7dGhpcy5zdGF0ZS5zdGVwID09PSAxICYmIDxkaXYgY2xhc3NOYW1lPVwiZm9ybVwiPjxGaXJzdFN0ZXAgb25OZXh0PXt0aGlzLm9uRmlyc3RTdGVwfS8+PC9kaXY+fVxyXG4gICAgICAgICAge3RoaXMuc3RhdGUuc3RlcCA9PT0gMiAmJiA8ZGl2IGNsYXNzTmFtZT1cImZvcm1cIj48U2Vjb25kU3RlcCBvbkJhY2s9e3RoaXMucHJldmlvdXNTdGVwfSBvbk5leHQ9e3RoaXMub25TZWNvbmRTdGVwfS8+PC9kaXY+fVxyXG4gICAgICAgICAge3RoaXMuc3RhdGUuc3RlcCA9PT0gMyAmJiA8ZGl2IGNsYXNzTmFtZT1cImZvcm0gd2l0aG91dC1ib3JkZXJcIj48VGhpcmRTdGVwIG9uRGFzaGJvYXJkQnRuQ2xpY2s9e3RoaXMub25EYXNoYm9hcmRCdG5DbGlja30vPjwvZGl2Pn1cclxuXHJcbiAgICAgICAgPC9DdXN0b21Nb2RhbD5cclxuXHJcbiAgICAgICAgPHN0eWxlIGdsb2JhbCBqc3g+e2BcclxuICAgICAgICAgIC5tb2RhbC1kaWFsb2cge1xyXG4gICAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgICAgIHRvcDogNTAlO1xyXG4gICAgICAgICAgICBsZWZ0OiA1MCU7XHJcbiAgICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICB9XHJcbiAgICAgICAgICAubW9kYWwgLm1vZGFsX190aXRsZSB7XHJcbiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgICAgICAgICBjb2xvcjogIzY2YTllMjtcclxuICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgICAgICAgICBtYXJnaW4tdG9wOiAyMHB4O1xyXG4gICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG4gICAgICAgICAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgICAgICAgICB9XHJcbiAgICAgICAgICAuZm9ybSB7XHJcbiAgICAgICAgICAgIG1hcmdpbjogNjBweCAxMHB4O1xyXG4gICAgICAgICAgICBwYWRkaW5nLWJvdHRvbTogNjBweDtcclxuICAgICAgICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICM4MDgwODA7XHJcbiAgICAgICAgICB9XHJcbiAgICAgICAgICAud2l0aG91dC1ib3JkZXIge1xyXG4gICAgICAgICAgICBib3JkZXI6IG5vbmU7XHJcbiAgICAgICAgICB9XHJcbiAgICAgICAgICAubmV4dC1idG4ge1xyXG4gICAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgICAgIHJpZ2h0OiAxMHB4O1xyXG4gICAgICAgICAgICBib3R0b206IDEwcHg7XHJcbiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgICAgICAgICAgZm9udC1zaXplOiAxNXB4O1xyXG4gICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgICAgICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbiAgICAgICAgICAgIGNvbG9yOiAjNjZhOWUyO1xyXG4gICAgICAgICAgfVxyXG4gICAgICAgICAgLm5leHQtYnRuOmFmdGVyIHtcclxuICAgICAgICAgICAgY29udGVudDogJ1xcdTIxOTInO1xyXG4gICAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICAgICAgICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XHJcbiAgICAgICAgICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XHJcbiAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiA1cHg7XHJcbiAgICAgICAgICB9XHJcbiAgICAgICAgICAuYmFjay1idG4ge1xyXG4gICAgICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgICAgIGxlZnQ6IDEwcHg7XHJcbiAgICAgICAgICAgIGJvdHRvbTogMTBweDtcclxuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gICAgICAgICAgICBmb250LXNpemU6IDE1cHg7XHJcbiAgICAgICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICAgICAgICAgICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICAgICAgICAgICAgY29sb3I6ICM4MDgwODA7XHJcbiAgICAgICAgICB9XHJcbiAgICAgICAgYH08L3N0eWxlPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIClcclxuICB9XHJcbn1cclxuXHJcbmNvbnN0IG1hcFN0YXRlVG9Qcm9wcyA9IHN0YXRlID0+ICh7XHJcbiAgYXV0aDogc3RhdGUuYXV0aCxcclxufSk7XHJcblxyXG5leHBvcnQgZGVmYXVsdCBjb25uZWN0KG1hcFN0YXRlVG9Qcm9wcykoU2luZ1VwRm9ybVdpemFyZCk7XHJcbiJdfQ== */\n/*@ sourceURL=components\\SingUpFormWizard\\SingUpFormWizard.js */'
-        })
-      );
+      return null;
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
     }
   }]);
 
-  return SingUpFormWizard;
-}(__WEBPACK_IMPORTED_MODULE_1_react___default.a.Component);
+  return SingUpRequired;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
@@ -1593,16 +1582,37 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_2_react_redux__["connect"])(mapStateToProps)(SingUpFormWizard));
+var _default = Object(__WEBPACK_IMPORTED_MODULE_1_react_redux__["connect"])(mapStateToProps)(SingUpRequired);
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(SingUpRequired, 'SingUpRequired', 'E:/projects/react/singup-module/components/SingUpRequired/SingUpRequired.js');
+  reactHotLoader.register(mapStateToProps, 'mapStateToProps', 'E:/projects/react/singup-module/components/SingUpRequired/SingUpRequired.js');
+  reactHotLoader.register(_default, 'default', 'E:/projects/react/singup-module/components/SingUpRequired/SingUpRequired.js');
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ "./components/SingUpFormWizard/index.js":
+/***/ "./components/SingUpRequired/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingUpFormWizard__ = __webpack_require__("./components/SingUpFormWizard/SingUpFormWizard.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__SingUpFormWizard__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__SingUpRequired__ = __webpack_require__("./components/SingUpRequired/SingUpRequired.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__SingUpRequired__["a"]; });
 
 
 /***/ }),
@@ -1611,20 +1621,25 @@ var mapStateToProps = function mapStateToProps(state) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("./node_modules/styled-jsx/style.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__("prop-types");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__ = __webpack_require__("react-bootstrap");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_bootstrap__ = __webpack_require__("./node_modules/react-bootstrap/es/index.js");
 var _jsxFileName = 'E:\\projects\\react\\singup-module\\components\\StepsProgress\\StepsProgress.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 
 
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1657,7 +1672,7 @@ var StepsProgress = function (_React$Component) {
             lineNumber: 13
           }
         },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["ProgressBar"], { now: widthSteps, srOnly: true, __source: {
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_bootstrap__["j" /* ProgressBar */], { now: widthSteps, srOnly: true, __source: {
             fileName: _jsxFileName,
             lineNumber: 14
           }
@@ -1667,6 +1682,11 @@ var StepsProgress = function (_React$Component) {
           css: '.progress{height:10px;border-radius:0;}.progress-bar{background-image:none;background-color:#66a9e2;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXFN0ZXBzUHJvZ3Jlc3NcXFN0ZXBzUHJvZ3Jlc3MuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZTJCLEFBR3VCLEFBSVUsWUFITixVQUlTLE1BSDNCLG1CQUlBIiwiZmlsZSI6ImNvbXBvbmVudHNcXFN0ZXBzUHJvZ3Jlc3NcXFN0ZXBzUHJvZ3Jlc3MuanMiLCJzb3VyY2VSb290IjoiRTovcHJvamVjdHMvcmVhY3Qvc2luZ3VwLW1vZHVsZSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcyc7XHJcbmltcG9ydCB7IFByb2dyZXNzQmFyIH0gZnJvbSAncmVhY3QtYm9vdHN0cmFwJztcclxuXHJcblxyXG5jbGFzcyBTdGVwc1Byb2dyZXNzIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcclxuICBjb25zdHJ1Y3Rvcihwcm9wcywgY29udGV4dCkge1xyXG4gICAgc3VwZXIocHJvcHMsIGNvbnRleHQpO1xyXG4gIH1cclxuXHJcbiAgcmVuZGVyKCkge1xyXG4gICAgY29uc3Qgd2lkdGhTdGVwcyA9IDEwMCAvIHRoaXMucHJvcHMuc3RlcHMgKiB0aGlzLnByb3BzLmN1cnJlbnRTdGVwO1xyXG4gICAgcmV0dXJuIChcclxuICAgICAgPGRpdj5cclxuICAgICAgICA8UHJvZ3Jlc3NCYXIgbm93PXt3aWR0aFN0ZXBzfSBzck9ubHkgLz5cclxuXHJcbiAgICAgICAgPHN0eWxlIGdsb2JhbCBqc3g+e2BcclxuICAgICAgICAucHJvZ3Jlc3Mge1xyXG4gICAgICAgICAgaGVpZ2h0OiAxMHB4O1xyXG4gICAgICAgICAgYm9yZGVyLXJhZGl1czogMDtcclxuICAgICAgICB9XHJcbiAgICAgICAgLnByb2dyZXNzLWJhciB7XHJcbiAgICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiBub25lO1xyXG4gICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzY2YTllMjtcclxuICAgICAgICB9XHJcbiAgICAgICAgYH08L3N0eWxlPlxyXG4gICAgICA8L2Rpdj5cclxuICAgICk7XHJcbiAgfVxyXG59XHJcblxyXG5TdGVwc1Byb2dyZXNzLnByb3BUeXBlcyA9IHtcclxuICBzdGVwczogUHJvcFR5cGVzLm51bWJlcixcclxuICBjdXJyZW50U3RlcDogUHJvcFR5cGVzLm51bWJlcixcclxufTtcclxuU3RlcHNQcm9ncmVzcy5kZWZhdWx0UHJvcHMgPSB7XHJcbiAgc3RlcHM6IDMsXHJcbiAgY3VycmVudFN0ZXA6IDEsXHJcbn07XHJcblxyXG5leHBvcnQgZGVmYXVsdCBTdGVwc1Byb2dyZXNzO1xyXG4iXX0= */\n/*@ sourceURL=components\\StepsProgress\\StepsProgress.js */'
         })
       );
+    }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
     }
   }]);
 
@@ -1682,17 +1702,26 @@ StepsProgress.defaultProps = {
   currentStep: 1
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (StepsProgress);
+var _default = StepsProgress;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
 
-/***/ }),
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
 
-/***/ "./components/StepsProgress/index.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__StepsProgress__ = __webpack_require__("./components/StepsProgress/StepsProgress.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__StepsProgress__["a"]; });
+  if (!reactHotLoader) {
+    return;
+  }
 
+  reactHotLoader.register(StepsProgress, 'StepsProgress', 'E:/projects/react/singup-module/components/StepsProgress/StepsProgress.js');
+  reactHotLoader.register(_default, 'default', 'E:/projects/react/singup-module/components/StepsProgress/StepsProgress.js');
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
@@ -1700,21 +1729,25 @@ StepsProgress.defaultProps = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("./node_modules/styled-jsx/style.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__("prop-types");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux__ = __webpack_require__("react-redux");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_redux__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__ = __webpack_require__("react-bootstrap");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_react_bootstrap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux__ = __webpack_require__("./node_modules/react-redux/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_bootstrap__ = __webpack_require__("./node_modules/react-bootstrap/es/index.js");
 var _jsxFileName = 'E:\\projects\\react\\singup-module\\components\\ThirdStep\\ThirdStep.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1757,7 +1790,7 @@ var ThirdStep = function (_React$Component) {
               lineNumber: 19
             }
           },
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["Glyphicon"], { glyph: 'ok', className: 'icon-block__ok', __source: {
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_bootstrap__["d" /* Glyphicon */], { glyph: 'ok', className: 'icon-block__ok', __source: {
               fileName: _jsxFileName,
               lineNumber: 20
             }
@@ -1789,6 +1822,11 @@ var ThirdStep = function (_React$Component) {
         })
       );
     }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
   }]);
 
   return ThirdStep;
@@ -1798,44 +1836,434 @@ ThirdStep.propTypes = {
   onDashboardBtnClick: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.func.isRequired
 };
 
+var _default = Object(__WEBPACK_IMPORTED_MODULE_3_react_redux__["connect"])()(ThirdStep);
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_3_react_redux__["connect"])()(ThirdStep));
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
+
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
+
+  if (!reactHotLoader) {
+    return;
+  }
+
+  reactHotLoader.register(ThirdStep, 'ThirdStep', 'E:/projects/react/singup-module/components/ThirdStep/ThirdStep.js');
+  reactHotLoader.register(_default, 'default', 'E:/projects/react/singup-module/components/ThirdStep/ThirdStep.js');
+  leaveModule(module);
+})();
+
+;
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ "./components/ThirdStep/index.js":
+/***/ "./node_modules/react-bootstrap/es/Table.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ThirdStep__ = __webpack_require__("./components/ThirdStep/ThirdStep.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__ThirdStep__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__ = __webpack_require__("./node_modules/babel-runtime/helpers/extends.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_objectWithoutProperties__ = __webpack_require__("./node_modules/babel-runtime/helpers/objectWithoutProperties.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_objectWithoutProperties___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_objectWithoutProperties__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_classCallCheck__ = __webpack_require__("./node_modules/babel-runtime/helpers/classCallCheck.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_classCallCheck___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_classCallCheck__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn__ = __webpack_require__("./node_modules/babel-runtime/helpers/possibleConstructorReturn.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits__ = __webpack_require__("./node_modules/babel-runtime/helpers/inherits.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_classnames__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_bootstrapUtils__ = __webpack_require__("./node_modules/react-bootstrap/es/utils/bootstrapUtils.js");
 
+
+
+
+
+
+
+
+
+
+
+var propTypes = {
+  striped: __WEBPACK_IMPORTED_MODULE_7_prop_types___default.a.bool,
+  bordered: __WEBPACK_IMPORTED_MODULE_7_prop_types___default.a.bool,
+  condensed: __WEBPACK_IMPORTED_MODULE_7_prop_types___default.a.bool,
+  hover: __WEBPACK_IMPORTED_MODULE_7_prop_types___default.a.bool,
+  responsive: __WEBPACK_IMPORTED_MODULE_7_prop_types___default.a.bool
+};
+
+var defaultProps = {
+  bordered: false,
+  condensed: false,
+  hover: false,
+  responsive: false,
+  striped: false
+};
+
+var Table = function (_React$Component) {
+  __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits___default()(Table, _React$Component);
+
+  function Table() {
+    __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_classCallCheck___default()(this, Table);
+
+    return __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn___default()(this, _React$Component.apply(this, arguments));
+  }
+
+  Table.prototype.render = function render() {
+    var _extends2;
+
+    var _props = this.props,
+        striped = _props.striped,
+        bordered = _props.bordered,
+        condensed = _props.condensed,
+        hover = _props.hover,
+        responsive = _props.responsive,
+        className = _props.className,
+        props = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_objectWithoutProperties___default()(_props, ['striped', 'bordered', 'condensed', 'hover', 'responsive', 'className']);
+
+    var _splitBsProps = Object(__WEBPACK_IMPORTED_MODULE_8__utils_bootstrapUtils__["f" /* splitBsProps */])(props),
+        bsProps = _splitBsProps[0],
+        elementProps = _splitBsProps[1];
+
+    var classes = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({}, Object(__WEBPACK_IMPORTED_MODULE_8__utils_bootstrapUtils__["d" /* getClassSet */])(bsProps), (_extends2 = {}, _extends2[Object(__WEBPACK_IMPORTED_MODULE_8__utils_bootstrapUtils__["e" /* prefix */])(bsProps, 'striped')] = striped, _extends2[Object(__WEBPACK_IMPORTED_MODULE_8__utils_bootstrapUtils__["e" /* prefix */])(bsProps, 'bordered')] = bordered, _extends2[Object(__WEBPACK_IMPORTED_MODULE_8__utils_bootstrapUtils__["e" /* prefix */])(bsProps, 'condensed')] = condensed, _extends2[Object(__WEBPACK_IMPORTED_MODULE_8__utils_bootstrapUtils__["e" /* prefix */])(bsProps, 'hover')] = hover, _extends2));
+
+    var table = __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement('table', __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({}, elementProps, { className: __WEBPACK_IMPORTED_MODULE_5_classnames___default()(className, classes) }));
+
+    if (responsive) {
+      return __WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(
+        'div',
+        { className: Object(__WEBPACK_IMPORTED_MODULE_8__utils_bootstrapUtils__["e" /* prefix */])(bsProps, 'responsive') },
+        table
+      );
+    }
+
+    return table;
+  };
+
+  return Table;
+}(__WEBPACK_IMPORTED_MODULE_6_react___default.a.Component);
+
+Table.propTypes = propTypes;
+Table.defaultProps = defaultProps;
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_8__utils_bootstrapUtils__["a" /* bsClass */])('table', Table));
 
 /***/ }),
 
-/***/ "./constants/auth.js":
+/***/ "./node_modules/react-bootstrap/es/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FIRST_STEP_REQUEST; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SECOND_STEP_REQUEST; });
-var FIRST_STEP_REQUEST = 'FIRST_STEP_REQUEST';
-var SECOND_STEP_REQUEST = 'SECOND_STEP_REQUEST';
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Accordion__ = __webpack_require__("./node_modules/react-bootstrap/es/Accordion.js");
+/* unused harmony reexport Accordion */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Alert__ = __webpack_require__("./node_modules/react-bootstrap/es/Alert.js");
+/* unused harmony reexport Alert */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Badge__ = __webpack_require__("./node_modules/react-bootstrap/es/Badge.js");
+/* unused harmony reexport Badge */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Breadcrumb__ = __webpack_require__("./node_modules/react-bootstrap/es/Breadcrumb.js");
+/* unused harmony reexport Breadcrumb */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__BreadcrumbItem__ = __webpack_require__("./node_modules/react-bootstrap/es/BreadcrumbItem.js");
+/* unused harmony reexport BreadcrumbItem */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Button__ = __webpack_require__("./node_modules/react-bootstrap/es/Button.js");
+/* unused harmony reexport Button */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ButtonGroup__ = __webpack_require__("./node_modules/react-bootstrap/es/ButtonGroup.js");
+/* unused harmony reexport ButtonGroup */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ButtonToolbar__ = __webpack_require__("./node_modules/react-bootstrap/es/ButtonToolbar.js");
+/* unused harmony reexport ButtonToolbar */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Carousel__ = __webpack_require__("./node_modules/react-bootstrap/es/Carousel.js");
+/* unused harmony reexport Carousel */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__CarouselItem__ = __webpack_require__("./node_modules/react-bootstrap/es/CarouselItem.js");
+/* unused harmony reexport CarouselItem */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Checkbox__ = __webpack_require__("./node_modules/react-bootstrap/es/Checkbox.js");
+/* unused harmony reexport Checkbox */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__Clearfix__ = __webpack_require__("./node_modules/react-bootstrap/es/Clearfix.js");
+/* unused harmony reexport Clearfix */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__CloseButton__ = __webpack_require__("./node_modules/react-bootstrap/es/CloseButton.js");
+/* unused harmony reexport CloseButton */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ControlLabel__ = __webpack_require__("./node_modules/react-bootstrap/es/ControlLabel.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_13__ControlLabel__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__Col__ = __webpack_require__("./node_modules/react-bootstrap/es/Col.js");
+/* unused harmony reexport Col */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__Collapse__ = __webpack_require__("./node_modules/react-bootstrap/es/Collapse.js");
+/* unused harmony reexport Collapse */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__Dropdown__ = __webpack_require__("./node_modules/react-bootstrap/es/Dropdown.js");
+/* unused harmony reexport Dropdown */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__DropdownButton__ = __webpack_require__("./node_modules/react-bootstrap/es/DropdownButton.js");
+/* unused harmony reexport DropdownButton */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__Fade__ = __webpack_require__("./node_modules/react-bootstrap/es/Fade.js");
+/* unused harmony reexport Fade */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__Form__ = __webpack_require__("./node_modules/react-bootstrap/es/Form.js");
+/* unused harmony reexport Form */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__FormControl__ = __webpack_require__("./node_modules/react-bootstrap/es/FormControl.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_20__FormControl__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__FormGroup__ = __webpack_require__("./node_modules/react-bootstrap/es/FormGroup.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_21__FormGroup__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__Glyphicon__ = __webpack_require__("./node_modules/react-bootstrap/es/Glyphicon.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_22__Glyphicon__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__Grid__ = __webpack_require__("./node_modules/react-bootstrap/es/Grid.js");
+/* unused harmony reexport Grid */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__HelpBlock__ = __webpack_require__("./node_modules/react-bootstrap/es/HelpBlock.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_24__HelpBlock__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__Image__ = __webpack_require__("./node_modules/react-bootstrap/es/Image.js");
+/* unused harmony reexport Image */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__InputGroup__ = __webpack_require__("./node_modules/react-bootstrap/es/InputGroup.js");
+/* unused harmony reexport InputGroup */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__Jumbotron__ = __webpack_require__("./node_modules/react-bootstrap/es/Jumbotron.js");
+/* unused harmony reexport Jumbotron */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__Label__ = __webpack_require__("./node_modules/react-bootstrap/es/Label.js");
+/* unused harmony reexport Label */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__ListGroup__ = __webpack_require__("./node_modules/react-bootstrap/es/ListGroup.js");
+/* unused harmony reexport ListGroup */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ListGroupItem__ = __webpack_require__("./node_modules/react-bootstrap/es/ListGroupItem.js");
+/* unused harmony reexport ListGroupItem */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__Media__ = __webpack_require__("./node_modules/react-bootstrap/es/Media.js");
+/* unused harmony reexport Media */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__MenuItem__ = __webpack_require__("./node_modules/react-bootstrap/es/MenuItem.js");
+/* unused harmony reexport MenuItem */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__Modal__ = __webpack_require__("./node_modules/react-bootstrap/es/Modal.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_33__Modal__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ModalBody__ = __webpack_require__("./node_modules/react-bootstrap/es/ModalBody.js");
+/* unused harmony reexport ModalBody */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__ModalFooter__ = __webpack_require__("./node_modules/react-bootstrap/es/ModalFooter.js");
+/* unused harmony reexport ModalFooter */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__ModalHeader__ = __webpack_require__("./node_modules/react-bootstrap/es/ModalHeader.js");
+/* unused harmony reexport ModalHeader */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__ModalTitle__ = __webpack_require__("./node_modules/react-bootstrap/es/ModalTitle.js");
+/* unused harmony reexport ModalTitle */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__Nav__ = __webpack_require__("./node_modules/react-bootstrap/es/Nav.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_38__Nav__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__Navbar__ = __webpack_require__("./node_modules/react-bootstrap/es/Navbar.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_39__Navbar__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__NavbarBrand__ = __webpack_require__("./node_modules/react-bootstrap/es/NavbarBrand.js");
+/* unused harmony reexport NavbarBrand */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__NavDropdown__ = __webpack_require__("./node_modules/react-bootstrap/es/NavDropdown.js");
+/* unused harmony reexport NavDropdown */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__NavItem__ = __webpack_require__("./node_modules/react-bootstrap/es/NavItem.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_42__NavItem__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__Overlay__ = __webpack_require__("./node_modules/react-bootstrap/es/Overlay.js");
+/* unused harmony reexport Overlay */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__OverlayTrigger__ = __webpack_require__("./node_modules/react-bootstrap/es/OverlayTrigger.js");
+/* unused harmony reexport OverlayTrigger */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__PageHeader__ = __webpack_require__("./node_modules/react-bootstrap/es/PageHeader.js");
+/* unused harmony reexport PageHeader */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__PageItem__ = __webpack_require__("./node_modules/react-bootstrap/es/PageItem.js");
+/* unused harmony reexport PageItem */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__Pager__ = __webpack_require__("./node_modules/react-bootstrap/es/Pager.js");
+/* unused harmony reexport Pager */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__Pagination__ = __webpack_require__("./node_modules/react-bootstrap/es/Pagination.js");
+/* unused harmony reexport Pagination */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__Panel__ = __webpack_require__("./node_modules/react-bootstrap/es/Panel.js");
+/* unused harmony reexport Panel */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__PanelGroup__ = __webpack_require__("./node_modules/react-bootstrap/es/PanelGroup.js");
+/* unused harmony reexport PanelGroup */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__Popover__ = __webpack_require__("./node_modules/react-bootstrap/es/Popover.js");
+/* unused harmony reexport Popover */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__ProgressBar__ = __webpack_require__("./node_modules/react-bootstrap/es/ProgressBar.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_52__ProgressBar__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__Radio__ = __webpack_require__("./node_modules/react-bootstrap/es/Radio.js");
+/* unused harmony reexport Radio */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__ResponsiveEmbed__ = __webpack_require__("./node_modules/react-bootstrap/es/ResponsiveEmbed.js");
+/* unused harmony reexport ResponsiveEmbed */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__Row__ = __webpack_require__("./node_modules/react-bootstrap/es/Row.js");
+/* unused harmony reexport Row */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__SafeAnchor__ = __webpack_require__("./node_modules/react-bootstrap/es/SafeAnchor.js");
+/* unused harmony reexport SafeAnchor */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__SplitButton__ = __webpack_require__("./node_modules/react-bootstrap/es/SplitButton.js");
+/* unused harmony reexport SplitButton */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__Tab__ = __webpack_require__("./node_modules/react-bootstrap/es/Tab.js");
+/* unused harmony reexport Tab */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__TabContainer__ = __webpack_require__("./node_modules/react-bootstrap/es/TabContainer.js");
+/* unused harmony reexport TabContainer */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__TabContent__ = __webpack_require__("./node_modules/react-bootstrap/es/TabContent.js");
+/* unused harmony reexport TabContent */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__Table__ = __webpack_require__("./node_modules/react-bootstrap/es/Table.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_61__Table__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__TabPane__ = __webpack_require__("./node_modules/react-bootstrap/es/TabPane.js");
+/* unused harmony reexport TabPane */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__Tabs__ = __webpack_require__("./node_modules/react-bootstrap/es/Tabs.js");
+/* unused harmony reexport Tabs */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__Thumbnail__ = __webpack_require__("./node_modules/react-bootstrap/es/Thumbnail.js");
+/* unused harmony reexport Thumbnail */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__ToggleButton__ = __webpack_require__("./node_modules/react-bootstrap/es/ToggleButton.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_65__ToggleButton__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__ToggleButtonGroup__ = __webpack_require__("./node_modules/react-bootstrap/es/ToggleButtonGroup.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_66__ToggleButtonGroup__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__Tooltip__ = __webpack_require__("./node_modules/react-bootstrap/es/Tooltip.js");
+/* unused harmony reexport Tooltip */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__Well__ = __webpack_require__("./node_modules/react-bootstrap/es/Well.js");
+/* unused harmony reexport Well */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__utils__ = __webpack_require__("./node_modules/react-bootstrap/es/utils/index.js");
+/* unused harmony reexport utils */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /***/ }),
 
-/***/ "./pages/singup.js":
+/***/ "./pages/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Layout__ = __webpack_require__("./components/Layout/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_SingUpFormWizard__ = __webpack_require__("./components/SingUpFormWizard/index.js");
-var _jsxFileName = 'E:\\projects\\react\\singup-module\\pages\\singup.js';
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Dashboard__ = __webpack_require__("./components/Dashboard/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_SingUpRequired__ = __webpack_require__("./components/SingUpRequired/index.js");
+var _jsxFileName = 'E:\\projects\\react\\singup-module\\pages\\index.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+(function () {
+  var enterModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").enterModule;
+
+  enterModule && enterModule(module);
+})();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -1847,16 +2275,17 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var SingUp = function (_React$Component) {
-  _inherits(SingUp, _React$Component);
 
-  function SingUp(props, context) {
-    _classCallCheck(this, SingUp);
+var Index = function (_React$Component) {
+  _inherits(Index, _React$Component);
 
-    return _possibleConstructorReturn(this, (SingUp.__proto__ || Object.getPrototypeOf(SingUp)).call(this, props, context));
+  function Index(props, context) {
+    _classCallCheck(this, Index);
+
+    return _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).call(this, props, context));
   }
 
-  _createClass(SingUp, [{
+  _createClass(Index, [{
     key: 'render',
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -1864,225 +2293,83 @@ var SingUp = function (_React$Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 12
+            lineNumber: 13
           }
         },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_SingUpFormWizard__["a" /* default */], {
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_SingUpRequired__["a" /* default */], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 13
+            lineNumber: 14
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Dashboard__["a" /* default */], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15
           }
         })
       );
     }
+  }, {
+    key: '__reactstandin__regenerateByEval',
+    value: function __reactstandin__regenerateByEval(key, code) {
+      this[key] = eval(code);
+    }
   }]);
 
-  return SingUp;
+  return Index;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (SingUp);
-
-/***/ }),
-
-/***/ "./reducers/auth.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export initialState */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return initialFirstStepState; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return initialSecondStepState; });
-/* harmony export (immutable) */ __webpack_exports__["a"] = user;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_auth__ = __webpack_require__("./constants/auth.js");
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _default = Index;
 
 
+/* harmony default export */ __webpack_exports__["default"] = (_default);
+;
 
-var initialState = {
-  email: '',
-  password: '',
-  dateOfBirth: '',
-  gender: '',
-  howHearAboutUs: '',
-  isRegister: false
-};
+(function () {
+  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/patch.js").default;
 
-var initialFirstStepState = {
-  email: '',
-  password: '',
-  passwordConfirm: ''
-};
+  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/patch.js").leaveModule;
 
-var initialSecondStepState = {
-  birthdayDate: '',
-  birthdayMonth: '',
-  birthdayYear: '',
-  gender: '',
-  howHearAboutUs: ''
-};
-
-function user() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-  var action = arguments[1];
-
-  switch (action.type) {
-    case __WEBPACK_IMPORTED_MODULE_0__constants_auth__["a" /* FIRST_STEP_REQUEST */]:
-      return _extends({}, state, action.payload);
-    case __WEBPACK_IMPORTED_MODULE_0__constants_auth__["b" /* SECOND_STEP_REQUEST */]:
-      var dateOfBirth = new Date(action.payload.birthdayYear, action.payload.birthdayMonth, action.payload.birthdayDate).getTime();
-      return _extends({}, state, action.payload, { dateOfBirth: dateOfBirth, isRegister: true });
-    default:
-      return state;
+  if (!reactHotLoader) {
+    return;
   }
-}
+
+  reactHotLoader.register(Index, 'Index', 'E:/projects/react/singup-module/pages/index.js');
+  reactHotLoader.register(_default, 'default', 'E:/projects/react/singup-module/pages/index.js');
+  leaveModule(module);
+})();
+
+;
+    (function (Component, route) {
+      if(!Component) return
+      if (false) return
+      module.hot.accept()
+      Component.__route = route
+
+      if (module.hot.status() === 'idle') return
+
+      var components = next.router.components
+      for (var r in components) {
+        if (!components.hasOwnProperty(r)) continue
+
+        if (components[r].Component.__route === route) {
+          next.router.update(r, Component)
+        }
+      }
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
+  
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ "./reducers/index.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__("redux");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_redux__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux_form__ = __webpack_require__("react-redux-form");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux_form___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_redux_form__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth__ = __webpack_require__("./reducers/auth.js");
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_0_redux__["combineReducers"])(_extends({
-  auth: __WEBPACK_IMPORTED_MODULE_2__auth__["a" /* default */]
-}, Object(__WEBPACK_IMPORTED_MODULE_1_react_redux_form__["createForms"])({
-  firstStep: __WEBPACK_IMPORTED_MODULE_2__auth__["b" /* initialFirstStepState */],
-  secondStep: __WEBPACK_IMPORTED_MODULE_2__auth__["c" /* initialSecondStepState */]
-}))));
-
-/***/ }),
-
-/***/ "./store/configureStore.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = configureStore;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__("redux");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_redux__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux_devtools_extension__ = __webpack_require__("redux-devtools-extension");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_redux_devtools_extension___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_redux_devtools_extension__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_redux_thunk__ = __webpack_require__("redux-thunk");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_redux_thunk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_redux_thunk__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers__ = __webpack_require__("./reducers/index.js");
-
-
-
-
-
-function configureStore(initialState) {
-  return Object(__WEBPACK_IMPORTED_MODULE_0_redux__["createStore"])(__WEBPACK_IMPORTED_MODULE_3__reducers__["a" /* default */], initialState, Object(__WEBPACK_IMPORTED_MODULE_1_redux_devtools_extension__["composeWithDevTools"])(Object(__WEBPACK_IMPORTED_MODULE_0_redux__["applyMiddleware"])(__WEBPACK_IMPORTED_MODULE_2_redux_thunk___default.a)));
-}
-
-/***/ }),
-
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/singup.js");
+module.exports = __webpack_require__("./pages/index.js");
 
-
-/***/ }),
-
-/***/ "next/head":
-/***/ (function(module, exports) {
-
-module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "next/router":
-/***/ (function(module, exports) {
-
-module.exports = require("next/router");
-
-/***/ }),
-
-/***/ "prop-types":
-/***/ (function(module, exports) {
-
-module.exports = require("prop-types");
-
-/***/ }),
-
-/***/ "react":
-/***/ (function(module, exports) {
-
-module.exports = require("react");
-
-/***/ }),
-
-/***/ "react-addons-transition-group":
-/***/ (function(module, exports) {
-
-module.exports = require("react-addons-transition-group");
-
-/***/ }),
-
-/***/ "react-bootstrap":
-/***/ (function(module, exports) {
-
-module.exports = require("react-bootstrap");
-
-/***/ }),
-
-/***/ "react-dom":
-/***/ (function(module, exports) {
-
-module.exports = require("react-dom");
-
-/***/ }),
-
-/***/ "react-redux":
-/***/ (function(module, exports) {
-
-module.exports = require("react-redux");
-
-/***/ }),
-
-/***/ "react-redux-form":
-/***/ (function(module, exports) {
-
-module.exports = require("react-redux-form");
-
-/***/ }),
-
-/***/ "redux":
-/***/ (function(module, exports) {
-
-module.exports = require("redux");
-
-/***/ }),
-
-/***/ "redux-devtools-extension":
-/***/ (function(module, exports) {
-
-module.exports = require("redux-devtools-extension");
-
-/***/ }),
-
-/***/ "redux-thunk":
-/***/ (function(module, exports) {
-
-module.exports = require("redux-thunk");
-
-/***/ }),
-
-/***/ "styled-jsx/style":
-/***/ (function(module, exports) {
-
-module.exports = require("styled-jsx/style");
 
 /***/ })
 
-/******/ });
-//# sourceMappingURL=singup.js.map
+})
+//# sourceMappingURL=0.c9667e7206d5f7eebaeb.hot-update.js.map

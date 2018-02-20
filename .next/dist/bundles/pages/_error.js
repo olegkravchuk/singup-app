@@ -67,20 +67,20 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 24);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 24:
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(25);
+module.exports = __webpack_require__("E:\\projects\\react\\singup-module\\node_modules\\next\\dist\\pages\\_error.js");
 
 
 /***/ }),
 
-/***/ 25:
+/***/ "E:\\projects\\react\\singup-module\\node_modules\\next\\dist\\pages\\_error.js":
 /***/ (function(module, exports) {
 
 module.exports = require("E:\\projects\\react\\singup-module\\node_modules\\next\\dist\\pages\\_error.js");
@@ -88,3 +88,4 @@ module.exports = require("E:\\projects\\react\\singup-module\\node_modules\\next
 /***/ })
 
 /******/ });
+//# sourceMappingURL=_error.js.map
