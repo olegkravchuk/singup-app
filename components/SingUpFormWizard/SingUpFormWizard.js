@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Router from 'next/router'
-import ReactTransitionGroup from 'react-addons-transition-group'
 import StepsProgress from '../StepsProgress';
 import CustomModal from '../CustomModal';
 import FirstStep from '../FirstStep';
