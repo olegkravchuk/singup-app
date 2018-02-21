@@ -23,7 +23,7 @@ export const initialSecondStepState = {
   birthdayDate: '',
   birthdayMonth: '',
   birthdayYear: '',
-  gender: '',
+  gender: 'male',
   howHearAboutUs: ''
 };
 

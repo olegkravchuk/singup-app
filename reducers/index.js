@@ -1,13 +1,10 @@
 import { combineReducers } from 'redux'
-import { combineForms, createForms } from 'react-redux-form'
+import { reducer as formReducer } from 'redux-form'
 
-import auth, {initialFirstStepState, initialSecondStepState} from './auth'
+import auth from './auth'
 
 
 export default combineReducers({
   auth,
-  ...createForms({
-    firstStep: initialFirstStepState,
-    secondStep: initialSecondStepState
-  })
+  form: formReducer,
 });
